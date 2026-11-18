@@ -1,0 +1,1180 @@
+/* =========================================
+   FACULTY GUIDANCE
+========================================= */
+
+.guidance-page {
+  min-height: calc(100vh - 72px);
+
+  padding: 42px 46px 60px;
+
+  background:
+    radial-gradient(
+      circle at 88% 0%,
+      rgba(99, 102, 241, 0.06),
+      transparent 30%
+    ),
+    #f6f8fc;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.guidance-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-bottom: 35px;
+
+  animation: guidanceFadeUp 0.55s ease both;
+}
+
+.guidance-eyebrow {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #6366f1;
+
+  font-size: 10px;
+  font-weight: 750;
+
+  letter-spacing: 1.5px;
+}
+
+.guidance-header h1 {
+  margin: 0 0 8px;
+
+  color: #0f172a;
+
+  font-size: 32px;
+  font-weight: 750;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.8px;
+}
+
+.guidance-header p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+.guidance-header-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid #e0e7ff;
+  border-radius: 14px;
+
+  background: #eef2ff;
+  color: #4f46e5;
+
+  box-shadow:
+    0 8px 20px rgba(79, 70, 229, 0.08);
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.guidance-request-section,
+.guidance-status-section {
+  padding: 27px;
+
+  border: 1px solid #e5eaf2;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  box-shadow:
+    0 8px 28px rgba(15, 23, 42, 0.04);
+
+  animation:
+    guidanceFadeUp 0.65s ease 0.08s both;
+}
+
+.guidance-status-section {
+  margin-top: 22px;
+
+  animation-delay: 0.15s;
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.guidance-section-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  margin-bottom: 23px;
+}
+
+.section-label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #6366f1;
+
+  font-size: 9px;
+  font-weight: 750;
+
+  letter-spacing: 1.3px;
+}
+
+.guidance-section-heading h2 {
+  margin: 0 0 5px;
+
+  color: #1e293b;
+
+  font-size: 19px;
+  font-weight: 700;
+
+  letter-spacing: -0.3px;
+}
+
+.guidance-section-heading p {
+  margin: 0;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+.request-security {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 7px 10px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+
+  background: #f8fafc;
+  color: #64748b;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   FACULTY CARD
+========================================= */
+
+.faculty-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  padding: 20px;
+
+  border: 1px solid #e7ebf2;
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #fafbff
+    );
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.faculty-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #d9def0;
+
+  box-shadow:
+    0 12px 30px rgba(15, 23, 42, 0.07);
+}
+
+
+/* =========================================
+   FACULTY PROFILE
+========================================= */
+
+.faculty-profile {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+.faculty-avatar {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid #dfe4ff;
+  border-radius: 15px;
+
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.faculty-info {
+  min-width: 0;
+}
+
+.faculty-name-row {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 4px;
+}
+
+.faculty-name-row h3 {
+  margin: 0;
+
+  color: #1e293b;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.faculty-available {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 4px 7px;
+
+  border-radius: 20px;
+
+  background: #ecfdf5;
+  color: #059669;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.faculty-available span {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #10b981;
+
+  box-shadow:
+    0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.faculty-info > p {
+  margin: 0 0 5px;
+
+  color: #64748b;
+
+  font-size: 11px;
+}
+
+.faculty-specialization {
+  color: #94a3b8;
+
+  font-size: 10px;
+}
+
+
+/* =========================================
+   REQUEST BUTTON
+========================================= */
+
+.request-guidance-button {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 11px 15px;
+
+  border: 0;
+  border-radius: 10px;
+
+  background: #4f46e5;
+  color: white;
+
+  font-family: inherit;
+
+  font-size: 12px;
+  font-weight: 650;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 7px 18px rgba(79, 70, 229, 0.18);
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.request-guidance-button:hover {
+  background: #4338ca;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 23px rgba(79, 70, 229, 0.24);
+}
+
+.request-guidance-button:active {
+  transform: scale(0.98);
+}
+
+.request-guidance-button svg {
+  transition: transform 0.2s ease;
+}
+
+.request-guidance-button:hover svg {
+  transform: translateX(2px);
+}
+
+
+/* =========================================
+   CURRENT STATUS
+========================================= */
+
+.current-status {
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  background: #f8fafc;
+  color: #64748b;
+
+  font-size: 10px;
+  font-weight: 650;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.guidance-timeline {
+  display: flex;
+  align-items: center;
+}
+
+.guidance-step {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  flex: 1;
+
+  color: #94a3b8;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.guidance-step:hover {
+  transform: translateY(-2px);
+}
+
+.guidance-step-icon {
+  width: 37px;
+  height: 37px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 11px;
+
+  background: #f8fafc;
+
+  color: #94a3b8;
+}
+
+.guidance-step.completed {
+  color: #334155;
+}
+
+.guidance-step.completed .guidance-step-icon {
+  border-color: #d1fae5;
+
+  background: #ecfdf5;
+
+  color: #059669;
+}
+
+.guidance-step.current {
+  color: #334155;
+}
+
+.guidance-step.current .guidance-step-icon {
+  border-color: #e0e7ff;
+
+  background: #eef2ff;
+
+  color: #4f46e5;
+
+  box-shadow:
+    0 0 0 4px rgba(99, 102, 241, 0.06);
+}
+
+.guidance-step strong {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: inherit;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.guidance-step span {
+  display: block;
+
+  max-width: 170px;
+
+  color: #94a3b8;
+
+  font-size: 9px;
+
+  line-height: 1.4;
+}
+
+.guidance-connector {
+  width: 55px;
+  height: 1px;
+
+  flex-shrink: 0;
+
+  margin: 0 12px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #dbe1eb,
+      #e8ebf1
+    );
+}
+
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes guidanceFadeUp {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+.request-guidance-button:focus-visible {
+  outline: 2px solid #818cf8;
+  outline-offset: 3px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+  .guidance-page {
+    padding: 32px 26px 50px;
+  }
+
+  .guidance-timeline {
+    align-items: flex-start;
+
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .guidance-step {
+    width: 100%;
+  }
+
+  .guidance-connector {
+    width: 1px;
+    height: 25px;
+
+    margin: 0 0 0 18px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .guidance-page {
+    padding: 25px 18px 40px;
+  }
+
+  .guidance-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .guidance-header h1 {
+    font-size: 27px;
+  }
+
+  .guidance-header-icon {
+    display: none;
+  }
+
+  .guidance-request-section,
+  .guidance-status-section {
+    padding: 21px;
+
+    border-radius: 15px;
+  }
+
+  .guidance-section-heading {
+    flex-direction: column;
+  }
+
+  .faculty-card {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .faculty-action,
+  .request-guidance-button {
+    width: 100%;
+  }
+
+  .request-guidance-button {
+    justify-content: center;
+  }
+
+  .request-security {
+    display: none;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+  }
+}
+/* =========================================
+   GUIDANCE FORM
+========================================= */
+
+.guidance-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.guidance-form-field label {
+  color: #334155;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.guidance-form-field select,
+.guidance-form-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #dbe5f4;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #172033;
+  font: inherit;
+  font-size: 12px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.guidance-form-field select:focus,
+.guidance-form-field textarea:focus {
+  border-color: #93b4ff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.guidance-form-field textarea {
+  resize: vertical;
+  min-height: 85px;
+  line-height: 1.6;
+}
+
+.guidance-form-field small {
+  align-self: flex-end;
+  color: #94a3b8;
+  font-size: 10px;
+}
+
+.guidance-faculty-list {
+  display: grid;
+  gap: 14px;
+}
+
+.guidance-form-field select:disabled,
+.guidance-form-field textarea:disabled {
+  background: #f8fafc;
+  cursor: not-allowed;
+}
+
+/* =========================================
+   GUIDANCE MESSAGES
+========================================= */
+
+.guidance-message-state {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 14px 0;
+  padding: 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.guidance-message-state p {
+  margin: 0;
+}
+
+.guidance-error {
+  border-color: #fecaca;
+  background: #fffafa;
+  color: #b91c1c;
+}
+
+.guidance-retry-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 13px;
+  border: 1px solid #dbe5f4;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #2563eb;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.guidance-notice {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.guidance-notice.success {
+  border-color: #a7f3d0;
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.guidance-notice.error {
+  border-color: #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.guidance-create-link {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+/* =========================================
+   FACULTY BUTTON STATES
+========================================= */
+
+.request-guidance-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  transform: none;
+  box-shadow: none;
+}
+
+/* =========================================
+   GUIDANCE RESPONSE
+========================================= */
+
+.guidance-response-message {
+  margin-top: 18px;
+  padding: 16px;
+  border: 1px solid #dbe5f4;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.guidance-response-message strong {
+  display: block;
+  margin-bottom: 7px;
+  color: #172033;
+  font-size: 12px;
+}
+
+.guidance-response-message p {
+  margin: 0;
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   REQUEST HISTORY
+========================================= */
+
+.guidance-history-section {
+  margin-top: 26px;
+}
+
+.guidance-history-list {
+  display: grid;
+  gap: 13px;
+}
+
+.guidance-history-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.guidance-history-main {
+  min-width: 0;
+  flex: 1;
+}
+
+.guidance-history-id {
+  display: block;
+  margin-bottom: 8px;
+  color: #94a3b8;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.guidance-history-main h3 {
+  margin: 0;
+  color: #172033;
+  font-size: 15px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.guidance-history-main p {
+  margin: 7px 0 0;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.guidance-history-message {
+  margin-top: 12px !important;
+  padding: 11px 12px;
+  border-radius: 9px;
+  background: #f8fafc;
+  color: #475569 !important;
+}
+
+.guidance-history-date {
+  display: block;
+  margin-top: 12px;
+  color: #94a3b8;
+  font-size: 10px;
+}
+
+.guidance-history-response {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid #dbe5f4;
+  border-radius: 9px;
+  background: #f8fafc;
+}
+
+.guidance-history-response strong {
+  color: #334155;
+  font-size: 11px;
+}
+
+.guidance-history-response p {
+  margin-top: 5px;
+}
+
+@media (max-width: 650px) {
+  .guidance-history-card {
+    flex-direction: column;
+  }
+}
+/* Faculty specialization and research details */
+
+.faculty-detail-block {
+  margin-top: 13px;
+}
+
+.faculty-detail-label {
+  display: block;
+  margin-bottom: 7px;
+  color: #94a3b8;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.faculty-specialization-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.faculty-specialization-chip {
+  display: inline-flex;
+  padding: 6px 9px;
+  border: 1px solid #dbeafe;
+  border-radius: 7px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.faculty-research-text {
+  margin: 0;
+  color: #475569;
+  font-size: 11px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.faculty-email-text {
+  margin-top: 10px;
+  color: #64748b;
+  font-size: 10px;
+  overflow-wrap: anywhere;
+}
+
+.faculty-detail-muted {
+  color: #94a3b8;
+  font-size: 10px;
+}
+
+.faculty-unavailable {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #b91c1c;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.faculty-unavailable > span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ef4444;
+}
+
+.guidance-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.guidance-form-field label {
+  color: #334155;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.guidance-form-field select,
+.guidance-form-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #dbe5f4;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #172033;
+  font: inherit;
+  font-size: 12px;
+}
+
+.guidance-form-field textarea {
+  min-height: 85px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.guidance-form-field small {
+  align-self: flex-end;
+  color: #94a3b8;
+  font-size: 10px;
+}
+
+.guidance-faculty-list {
+  display: grid;
+  gap: 14px;
+}
+
+.guidance-message-state {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 14px 0;
+  padding: 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.guidance-message-state p {
+  margin: 0;
+}
+
+.guidance-error {
+  border-color: #fecaca;
+  background: #fffafa;
+  color: #b91c1c;
+}
+
+.guidance-retry-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 13px;
+  border: 1px solid #dbe5f4;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #2563eb;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.guidance-notice {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.guidance-notice.success {
+  border-color: #a7f3d0;
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.guidance-notice.error {
+  border-color: #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.guidance-create-link {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.guidance-form-field select:focus,
+.guidance-form-field textarea:focus {
+  outline: none;
+  border-color: #93b4ff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.request-guidance-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  transform: none;
+  box-shadow: none;
+}
+
+.guidance-response-message,
+.guidance-history-response {
+  margin-top: 14px;
+  padding: 13px;
+  border: 1px solid #dbe5f4;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.guidance-response-message strong,
+.guidance-history-response strong {
+  color: #334155;
+  font-size: 11px;
+}
+
+.guidance-response-message p,
+.guidance-history-response p {
+  margin: 6px 0 0;
+  color: #475569;
+  font-size: 11px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.guidance-history-section {
+  margin-top: 26px;
+}
+
+.guidance-history-list {
+  display: grid;
+  gap: 13px;
+}
+
+.guidance-history-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.guidance-history-main {
+  min-width: 0;
+  flex: 1;
+}
+
+.guidance-history-id {
+  display: block;
+  margin-bottom: 8px;
+  color: #94a3b8;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.guidance-history-main h3 {
+  margin: 0;
+  color: #172033;
+  font-size: 15px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.guidance-history-main p {
+  margin: 7px 0 0;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.guidance-history-message {
+  margin-top: 12px !important;
+  padding: 11px 12px;
+  border-radius: 9px;
+  background: #f8fafc;
+}
+
+.guidance-history-date {
+  display: block;
+  margin-top: 12px;
+  color: #94a3b8;
+  font-size: 10px;
+}
+
+@media (max-width: 650px) {
+  .guidance-history-card {
+    flex-direction: column;
+  }
+}

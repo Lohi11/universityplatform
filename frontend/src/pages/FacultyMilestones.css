@@ -1,0 +1,909 @@
+.faculty-milestones-page {
+  min-height: 100vh;
+  background: #f6f8fc;
+  color: #0f172a;
+}
+
+.faculty-milestones-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 17px 5%;
+  border-bottom: 1px solid #e2e8f0;
+  background: #ffffff;
+}
+
+.faculty-milestones-brand,
+.faculty-milestones-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.faculty-milestones-brand {
+  font-size: 15px;
+  font-weight: 850;
+}
+
+.faculty-milestones-brand > span:last-child > span {
+  color: #2563eb;
+}
+
+.faculty-milestones-brand-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 12px;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.faculty-milestones-user {
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.faculty-milestones-back,
+.faculty-milestones-refresh {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 39px;
+  padding: 0 12px;
+  border: 1px solid #dbe5f4;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #3157d5;
+  font-size: 10px;
+  font-weight: 750;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.faculty-milestones-back:hover,
+.faculty-milestones-refresh:hover:not(:disabled) {
+  background: #eff6ff;
+}
+
+.faculty-milestones-refresh:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Main content */
+
+.faculty-milestones-content {
+  width: min(100% - 48px, 1220px);
+  margin: 0 auto;
+  padding: 38px 0 60px;
+}
+
+.faculty-milestones-page-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 27px;
+}
+
+.faculty-milestones-eyebrow {
+  display: block;
+  margin-bottom: 8px;
+  color: #3157d5;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+}
+
+.faculty-milestones-page-heading h1 {
+  margin: 0;
+  color: #0f172a;
+  font-size: clamp(25px, 3vw, 33px);
+  font-weight: 850;
+  letter-spacing: -0.04em;
+}
+
+.faculty-milestones-page-heading p {
+  margin: 10px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* Notices */
+
+.faculty-milestones-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  margin-bottom: 17px;
+  padding: 13px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #ffffff;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.faculty-milestones-notice > svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.faculty-milestones-notice p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.faculty-milestones-notice.success {
+  border-color: #a7f3d0;
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.faculty-milestones-notice.error {
+  border-color: #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.faculty-milestones-notice strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.faculty-milestones-notice button {
+  margin-top: 9px;
+  padding: 7px 10px;
+  border: 1px solid #fecaca;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #b91c1c;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Statistics */
+
+.faculty-milestones-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 31px;
+}
+
+.faculty-milestones-stats article {
+  display: grid;
+  grid-template-columns: 43px minmax(0, 1fr);
+  align-items: center;
+  column-gap: 12px;
+  padding: 17px;
+  border: 1px solid #e2e8f0;
+  border-radius: 13px;
+  background: #ffffff;
+}
+
+.faculty-milestone-stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  grid-row: span 2;
+  border-radius: 12px;
+}
+
+.faculty-milestone-stat-icon.total {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.faculty-milestone-stat-icon.pending {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.faculty-milestone-stat-icon.progress {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.faculty-milestone-stat-icon.completed {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.faculty-milestones-stats article > span {
+  align-self: end;
+  color: #64748b;
+  font-size: 9px;
+  font-weight: 650;
+}
+
+.faculty-milestones-stats article > strong {
+  align-self: start;
+  margin-top: 5px;
+  color: #0f172a;
+  font-size: 23px;
+  font-weight: 850;
+}
+
+/* Create/Edit form */
+
+.faculty-milestone-form-card {
+  margin-bottom: 39px;
+  padding: 25px;
+  border: 1px solid #dce5f4;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 9px 28px rgba(15, 23, 42, 0.025);
+  scroll-margin-top: 24px;
+}
+
+.faculty-milestone-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 23px;
+}
+
+.faculty-milestone-form-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 51px;
+  height: 51px;
+  flex-shrink: 0;
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.faculty-milestone-section-heading h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 20px;
+  font-weight: 850;
+  letter-spacing: -0.025em;
+}
+
+.faculty-milestone-section-heading p {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.faculty-milestones-project-warning {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  border: 1px solid #fed7aa;
+  border-radius: 9px;
+  background: #fff7ed;
+  color: #9a3412;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.faculty-milestone-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 19px;
+}
+
+.faculty-milestone-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.faculty-milestone-form-field.full {
+  grid-column: 1 / -1;
+}
+
+.faculty-milestone-form-field label {
+  color: #334155;
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.faculty-milestone-form-field label span {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.faculty-milestone-form-field input,
+.faculty-milestone-form-field select,
+.faculty-milestone-form-field textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 43px;
+  padding: 11px 12px;
+  border: 1px solid #dbe4f1;
+  border-radius: 9px;
+  outline: none;
+  background: #ffffff;
+  color: #172033;
+  font: inherit;
+  font-size: 11px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faculty-milestone-form-field textarea {
+  min-height: 100px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.faculty-milestone-form-field input:focus,
+.faculty-milestone-form-field select:focus,
+.faculty-milestone-form-field textarea:focus {
+  border-color: #93b4ff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.06);
+}
+
+.faculty-milestone-form-field input:disabled,
+.faculty-milestone-form-field select:disabled,
+.faculty-milestone-form-field textarea:disabled {
+  background: #f8fafc;
+  cursor: not-allowed;
+}
+
+.faculty-milestone-field-help {
+  color: #94a3b8;
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+.faculty-milestone-form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  grid-column: 1 / -1;
+}
+
+.faculty-milestone-submit,
+.faculty-milestone-cancel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 15px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  font-size: 10px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.faculty-milestone-submit {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 7px 16px rgba(37, 99, 235, 0.14);
+}
+
+.faculty-milestone-submit:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.faculty-milestone-submit:disabled,
+.faculty-milestone-cancel:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.faculty-milestone-cancel {
+  border-color: #e2e8f0;
+  background: #ffffff;
+  color: #475569;
+}
+
+.faculty-milestone-form-error {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  grid-column: 1 / -1;
+  padding: 11px 13px;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+/* Milestone list */
+
+.faculty-milestone-list-section {
+  min-width: 0;
+}
+
+.faculty-milestone-list-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.faculty-milestone-list-heading h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 23px;
+  font-weight: 850;
+  letter-spacing: -0.035em;
+}
+
+.faculty-milestone-list-heading p {
+  margin: 7px 0 0;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.faculty-milestone-total {
+  display: inline-flex;
+  align-items: center;
+  min-height: 29px;
+  padding: 0 11px;
+  border: 1px solid #dbe5f4;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #50617b;
+  font-size: 9px;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+/* Search and status filters */
+
+.faculty-milestone-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.faculty-milestone-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 43px;
+  padding: 0 13px;
+  border: 1px solid #dbe4f1;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #94a3b8;
+}
+
+.faculty-milestone-search input {
+  width: 100%;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #172033;
+  font: inherit;
+  font-size: 11px;
+}
+
+.faculty-milestone-search input::placeholder {
+  color: #94a3b8;
+}
+
+.faculty-milestone-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.faculty-milestone-filter {
+  min-height: 33px;
+  padding: 0 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #64748b;
+  font-size: 9px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.faculty-milestone-filter:hover {
+  background: #f8fafc;
+}
+
+.faculty-milestone-filter.active {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* Milestone cards */
+
+.faculty-milestone-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.faculty-milestone-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 21px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 7px 24px rgba(15, 23, 42, 0.025);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faculty-milestone-card:hover {
+  border-color: #cbdaf5;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.045);
+}
+
+.faculty-milestone-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.faculty-milestone-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.faculty-milestone-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 27px;
+  padding: 0 9px;
+  border-radius: 20px;
+  font-size: 9px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.faculty-milestone-status.status-pending {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.faculty-milestone-status.status-in_progress {
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+.faculty-milestone-status.status-completed {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.faculty-milestone-status.status-overdue {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.faculty-milestone-project-name {
+  margin-bottom: 8px;
+  color: #8291a7;
+  font-size: 9px;
+  font-weight: 750;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.faculty-milestone-card h3 {
+  margin: 0;
+  color: #14213d;
+  font-size: 18px;
+  font-weight: 850;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.faculty-milestone-card-description {
+  flex: 1;
+  min-height: 43px;
+  margin: 9px 0 17px;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.faculty-milestone-card-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  padding: 15px 0;
+  border-top: 1px solid #edf0f5;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.faculty-milestone-card-details > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
+  color: #8090a7;
+}
+
+.faculty-milestone-card-details > div > svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.faculty-milestone-card-details > div > span {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.faculty-milestone-card-details small {
+  color: #94a3b8;
+  font-size: 8px;
+  font-weight: 750;
+}
+
+.faculty-milestone-card-details strong {
+  color: #334155;
+  font-size: 10px;
+  font-weight: 750;
+  overflow-wrap: anywhere;
+}
+
+.faculty-milestone-completion {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 13px;
+  color: #047857;
+  font-size: 9px;
+  font-weight: 650;
+}
+
+.faculty-milestone-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+  margin-top: 16px;
+}
+
+.faculty-milestone-edit,
+.faculty-milestone-delete {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 35px;
+  padding: 0 11px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #475569;
+  font-size: 9px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.faculty-milestone-edit:hover:not(:disabled) {
+  border-color: #bfdbfe;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.faculty-milestone-delete {
+  border-color: #fecaca;
+  color: #b91c1c;
+}
+
+.faculty-milestone-delete:hover:not(:disabled) {
+  background: #fef2f2;
+}
+
+.faculty-milestone-edit:disabled,
+.faculty-milestone-delete:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* Empty state */
+
+.faculty-milestone-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 245px;
+  padding: 27px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 14px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.faculty-milestone-empty-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.faculty-milestone-empty h3 {
+  margin: 0;
+  color: #14213d;
+  font-size: 16px;
+  font-weight: 850;
+}
+
+.faculty-milestone-empty p {
+  max-width: 430px;
+  margin: 9px 0 0;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.faculty-milestone-empty button {
+  margin-top: 14px;
+  padding: 8px 11px;
+  border: 1px solid #dbe5f4;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #2563eb;
+  font-size: 10px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+/* Loading state */
+
+.faculty-milestones-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 75vh;
+  padding: 25px;
+  color: #64748b;
+  text-align: center;
+}
+
+.faculty-milestones-loading > svg {
+  color: #2563eb;
+}
+
+.faculty-milestones-loading h2 {
+  margin: 16px 0 7px;
+  color: #14213d;
+  font-size: 18px;
+  font-weight: 850;
+}
+
+.faculty-milestones-loading p {
+  margin: 0;
+  font-size: 11px;
+}
+
+.faculty-milestone-spin {
+  animation: facultyMilestoneSpin 1s linear infinite;
+}
+
+@keyframes facultyMilestoneSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive layout */
+
+@media (max-width: 900px) {
+  .faculty-milestones-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .faculty-milestone-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .faculty-milestones-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .faculty-milestones-header-actions {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .faculty-milestones-content {
+    width: min(100% - 30px, 1220px);
+    padding-top: 25px;
+  }
+
+  .faculty-milestones-page-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .faculty-milestones-refresh {
+    width: 100%;
+  }
+
+  .faculty-milestone-form-card {
+    padding: 18px;
+  }
+
+  .faculty-milestone-form {
+    grid-template-columns: 1fr;
+  }
+
+  .faculty-milestone-form-field.full,
+  .faculty-milestone-form-actions,
+  .faculty-milestone-form-error {
+    grid-column: auto;
+  }
+
+  .faculty-milestone-form-actions {
+    align-items: stretch;
+    flex-direction: column-reverse;
+  }
+
+  .faculty-milestone-submit,
+  .faculty-milestone-cancel {
+    width: 100%;
+  }
+
+  .faculty-milestone-list-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .faculty-milestone-card {
+    padding: 17px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faculty-milestone-spin {
+    animation: none;
+  }
+
+  .faculty-milestone-card {
+    transition: none;
+  }
+}

@@ -1,0 +1,683 @@
+.how-section {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 125px 0 125px;
+
+  background:
+    radial-gradient(
+      circle at 20% 15%,
+      rgba(37, 99, 235, 0.16),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(56, 189, 248, 0.08),
+      transparent 25%
+    ),
+    #07111f;
+
+  color: #f8fafc;
+}
+
+
+/* =========================
+   BACKGROUND DETAILS
+========================= */
+
+.how-section::before {
+  content: '';
+
+  position: absolute;
+
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.025) 1px,
+      transparent 1px
+    );
+
+  background-size: 45px 45px;
+
+  mask-image:
+    linear-gradient(
+      to bottom,
+      black,
+      transparent 90%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.how-header {
+  position: relative;
+  z-index: 2;
+
+  width: min(700px, calc(100% - 40px));
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.how-eyebrow {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 18px;
+  padding: 7px 11px;
+
+  border: 1px solid rgba(96, 165, 250, 0.2);
+
+  border-radius: 999px;
+
+  background: rgba(37, 99, 235, 0.08);
+
+  color: #60a5fa;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+}
+
+.how-eyebrow span {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #38bdf8;
+
+  box-shadow:
+    0 0 10px rgba(56, 189, 248, 0.7);
+}
+
+.how-header h2 {
+  margin: 0;
+
+  color: #f8fafc;
+
+  font-size: clamp(35px, 4vw, 52px);
+
+  line-height: 1.04;
+
+  letter-spacing: -0.055em;
+
+  font-weight: 800;
+}
+
+.how-header h2 span {
+  color: #60a5fa;
+}
+
+.how-header p {
+  max-width: 580px;
+
+  margin: 20px auto 0;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+
+  font-weight: 500;
+}
+
+
+/* =========================
+   MAIN PANEL
+========================= */
+
+.how-panel {
+  position: relative;
+  z-index: 2;
+
+  width: min(1080px, calc(100% - 40px));
+
+  margin: 0 auto;
+
+  padding: 30px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(148, 163, 184, 0.13);
+
+  border-radius: 27px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(15, 31, 51, 0.92),
+      rgba(8, 20, 34, 0.96)
+    );
+
+  box-shadow:
+    0 35px 90px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255,255,255,0.045);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.how-panel-glow {
+  position: absolute;
+
+  top: -170px;
+  left: 35%;
+
+  width: 420px;
+  height: 300px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(37, 99, 235, 0.16),
+      transparent 70%
+    );
+
+  filter: blur(15px);
+
+  pointer-events: none;
+}
+
+
+/* =========================
+   PANEL TOP
+========================= */
+
+.how-panel-top {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 23px;
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.how-panel-top > div:first-child {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.how-panel-top span {
+  color: #64748b;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+}
+
+.how-panel-top strong {
+  color: #e2e8f0;
+
+  font-size: 12px;
+
+  font-weight: 750;
+}
+
+.how-panel-status {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 7px 10px;
+
+  border: 1px solid rgba(52, 211, 153, 0.13);
+
+  border-radius: 999px;
+
+  background: rgba(16, 185, 129, 0.06);
+
+  color: #6ee7b7;
+
+  font-size: 7px;
+
+  font-weight: 700;
+}
+
+.how-panel-status span {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #34d399;
+
+  box-shadow:
+    0 0 9px rgba(52, 211, 153, 0.65);
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.how-timeline {
+  position: relative;
+
+  padding: 38px 12px 25px;
+}
+
+
+/* Main vertical line */
+
+.timeline-line {
+  position: absolute;
+
+  top: 52px;
+  bottom: 52px;
+  left: 35px;
+
+  width: 1px;
+
+  background: rgba(148, 163, 184, 0.13);
+}
+
+.timeline-line div {
+  width: 100%;
+  height: 48%;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #2563eb,
+      #38bdf8,
+      rgba(56,189,248,0)
+    );
+
+  box-shadow:
+    0 0 10px rgba(37, 99, 235, 0.35);
+
+  animation: timelineProgress 1.5s ease both;
+}
+
+
+/* =========================
+   INDIVIDUAL STEP
+========================= */
+
+.how-step {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 48px 1fr;
+
+  gap: 20px;
+
+  min-height: 115px;
+}
+
+
+/* Marker */
+
+.how-step-marker {
+  position: relative;
+  z-index: 3;
+
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(148, 163, 184, 0.16);
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #111f33,
+      #0c192a
+    );
+
+  color: #64748b;
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.18);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    background 0.3s ease;
+}
+
+.how-step:hover .how-step-marker {
+  transform: scale(1.06);
+
+  border-color: rgba(96, 165, 250, 0.3);
+
+  color: #93c5fd;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(37,99,235,0.2),
+      #0c192a
+    );
+}
+
+.how-step.active .how-step-marker {
+  border-color: rgba(96, 165, 250, 0.4);
+
+  background:
+    linear-gradient(
+      145deg,
+      #2563eb,
+      #1d4ed8
+    );
+
+  color: white;
+
+  box-shadow:
+    0 0 0 6px rgba(37,99,235,0.08),
+    0 10px 25px rgba(37,99,235,0.25);
+}
+
+.how-step.completed .how-step-marker {
+  border-color: rgba(52,211,153,0.25);
+
+  color: #6ee7b7;
+
+  background:
+    rgba(16,185,129,0.08);
+}
+
+
+/* Content */
+
+.how-step-content {
+  position: relative;
+
+  padding: 2px 0 28px;
+}
+
+.how-step-number {
+  position: absolute;
+
+  right: 3px;
+  top: 0;
+
+  color: #334155;
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+.how-step-content > span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #64748b;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+}
+
+.how-step.active .how-step-content > span {
+  color: #60a5fa;
+}
+
+.how-step.completed .how-step-content > span {
+  color: #34d399;
+}
+
+.how-step-content h3 {
+  margin: 0;
+
+  color: #e2e8f0;
+
+  font-size: 15px;
+
+  letter-spacing: -0.025em;
+
+  font-weight: 800;
+}
+
+.how-step-content p {
+  max-width: 600px;
+
+  margin: 8px 0 0;
+
+  color: #64748b;
+
+  font-size: 9px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   SUMMARY
+========================= */
+
+.how-summary {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding: 17px 19px;
+
+  border: 1px solid rgba(96, 165, 250, 0.13);
+
+  border-radius: 14px;
+
+  background:
+    rgba(37, 99, 235, 0.045);
+}
+
+.how-summary-left {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.summary-icon {
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: rgba(16,185,129,0.1);
+
+  color: #6ee7b7;
+}
+
+.how-summary-left > div:last-child {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.how-summary-left strong {
+  color: #cbd5e1;
+
+  font-size: 9px;
+
+  font-weight: 800;
+}
+
+.how-summary-left span {
+  color: #64748b;
+
+  font-size: 7px;
+}
+
+
+/* Bottom flow */
+
+.how-summary-flow {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #64748b;
+
+  font-size: 7px;
+
+  font-weight: 700;
+}
+
+.how-summary-flow svg {
+  color: #2563eb;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes timelineProgress {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 48%;
+  }
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+  .how-section {
+    padding: 90px 0;
+  }
+
+  .how-header {
+    width: calc(100% - 28px);
+
+    margin-bottom: 40px;
+  }
+
+  .how-header h2 {
+    font-size: 34px;
+  }
+
+  .how-panel {
+    width: calc(100% - 28px);
+
+    padding: 20px;
+
+    border-radius: 22px;
+  }
+
+  .how-panel-top {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 13px;
+  }
+
+  .how-timeline {
+    padding: 30px 0 20px;
+  }
+
+  .how-step {
+    grid-template-columns: 40px 1fr;
+
+    gap: 15px;
+
+    min-height: 135px;
+  }
+
+  .how-step-marker {
+    width: 39px;
+    height: 39px;
+
+    border-radius: 11px;
+  }
+
+  .timeline-line {
+    left: 19px;
+  }
+
+  .how-step-content h3 {
+    font-size: 14px;
+  }
+
+  .how-step-content p {
+    font-size: 8px;
+  }
+
+  .how-summary {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .how-summary-flow {
+    flex-wrap: wrap;
+
+    line-height: 1.8;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  .how-step-marker,
+  .how-step-content {
+    transition: none;
+  }
+
+  .timeline-line div {
+    animation: none;
+  }
+
+}

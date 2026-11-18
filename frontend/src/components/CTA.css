@@ -1,0 +1,476 @@
+.cta-section {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 110px 0 95px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f8fafc 0%,
+      #eef4fb 100%
+    );
+
+  color: #0f172a;
+}
+
+
+/* =========================
+   AMBIENT GLOWS
+========================= */
+
+.cta-glow {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  filter: blur(10px);
+}
+
+.cta-glow-one {
+  top: 10%;
+  left: 10%;
+
+  width: 320px;
+  height: 320px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(37, 99, 235, 0.10),
+      transparent 70%
+    );
+}
+
+.cta-glow-two {
+  right: 5%;
+  bottom: 0;
+
+  width: 300px;
+  height: 300px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(56, 189, 248, 0.09),
+      transparent 70%
+    );
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.cta-container {
+  position: relative;
+  z-index: 2;
+
+  width: min(1050px, calc(100% - 40px));
+
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  padding: 68px 50px 30px;
+
+  border: 1px solid #dbe5f0;
+
+  border-radius: 30px;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(37, 99, 235, 0.10),
+      transparent 42%
+    ),
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f7faff
+    );
+
+  box-shadow:
+    0 30px 80px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+
+  text-align: center;
+}
+
+
+/* =========================
+   BADGE
+========================= */
+
+.cta-badge {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 7px 11px;
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 999px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+}
+
+.cta-badge svg {
+  stroke-width: 2.4;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.cta-content {
+  max-width: 700px;
+
+  margin: 25px auto 0;
+}
+
+.cta-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 22px;
+
+  border: 1px solid rgba(96, 165, 250, 0.25);
+
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #2563eb,
+      #38bdf8
+    );
+
+  color: #ffffff;
+
+  box-shadow:
+    0 14px 30px rgba(37, 99, 235, 0.20);
+}
+
+.cta-content h2 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: clamp(36px, 5vw, 58px);
+
+  line-height: 1;
+
+  letter-spacing: -0.06em;
+
+  font-weight: 800;
+}
+
+.cta-content h2 span {
+  color: #2563eb;
+}
+
+.cta-content p {
+  max-width: 590px;
+
+  margin: 19px auto 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+
+  font-weight: 500;
+}
+
+
+/* =========================
+   ACTIONS
+========================= */
+
+.cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 13px;
+
+  margin-top: 28px;
+}
+
+.cta-primary {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 13px 18px;
+
+  border: 1px solid #2563eb;
+
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #1d4ed8
+    );
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 10px 25px rgba(37, 99, 235, 0.20);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.cta-primary:hover {
+  transform: translateY(-2px);
+
+  border-color: #1d4ed8;
+
+  box-shadow:
+    0 15px 32px rgba(37, 99, 235, 0.28);
+}
+
+.cta-primary svg {
+  transition:
+    transform 0.22s ease;
+}
+
+.cta-primary:hover svg {
+  transform: translateX(3px);
+}
+
+
+.cta-secondary {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 13px 10px;
+
+  color: #64748b;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease;
+}
+
+.cta-secondary span {
+  color: #2563eb;
+
+  font-weight: 800;
+}
+
+.cta-secondary:hover {
+  color: #334155;
+}
+
+
+/* =========================
+   POINTS
+========================= */
+
+.cta-points {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 22px;
+
+  margin-top: 29px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid #e2e8f0;
+}
+
+.cta-points > div {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  color: #64748b;
+
+  font-size: 8px;
+
+  font-weight: 650;
+}
+
+.cta-points svg {
+  color: #10b981;
+}
+
+
+/* =========================
+   BOTTOM DECORATION
+========================= */
+
+.cta-bottom-line {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 48px;
+}
+
+.cta-bottom-line > span {
+  flex: 1;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #dbe5f0
+    );
+}
+
+.cta-bottom-line > span:last-child {
+  background:
+    linear-gradient(
+      90deg,
+      #dbe5f0,
+      transparent
+    );
+}
+
+.cta-bottom-line > div {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+}
+
+.cta-bottom-line > div span {
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background: #bfdbfe;
+}
+
+.cta-bottom-line > div span:nth-child(2) {
+  width: 6px;
+  height: 6px;
+
+  background: #60a5fa;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+  .cta-section {
+    padding: 85px 0;
+  }
+
+  .cta-container {
+    width: calc(100% - 28px);
+
+    padding: 50px 22px 25px;
+
+    border-radius: 23px;
+  }
+
+  .cta-content h2 {
+    font-size: 38px;
+  }
+
+  .cta-content p {
+    font-size: 11px;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+  .cta-primary {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .cta-points {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 10px;
+
+    width: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+@media (max-width: 420px) {
+
+  .cta-container {
+    width: calc(100% - 24px);
+  }
+
+  .cta-content h2 {
+    font-size: 34px;
+  }
+
+  .cta-icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  .cta-primary,
+  .cta-primary svg {
+    transition: none;
+  }
+}

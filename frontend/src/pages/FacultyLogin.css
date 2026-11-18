@@ -1,0 +1,390 @@
+.faculty-login-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+/* Branding */
+
+.faculty-login-brand {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+  overflow: hidden;
+  padding: 38px 7%;
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(59, 130, 246, 0.25),
+      transparent 38%
+    ),
+    linear-gradient(145deg, #071426, #10264a);
+  color: #ffffff;
+}
+
+.faculty-login-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  width: fit-content;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.faculty-login-logo > span:last-child > span {
+  color: #60a5fa;
+}
+
+.faculty-login-logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 13px;
+  background: #2563eb;
+}
+
+.faculty-login-brand-content {
+  max-width: 500px;
+  margin: auto 0;
+}
+
+.faculty-login-eyebrow {
+  display: block;
+  margin-bottom: 13px;
+  color: #3b82f6;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.faculty-login-brand-content .faculty-login-eyebrow {
+  color: #93c5fd;
+}
+
+.faculty-login-brand-content h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(32px, 4vw, 50px);
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: -0.045em;
+}
+
+.faculty-login-brand-content h1 span {
+  color: #60a5fa;
+}
+
+.faculty-login-brand-content > p {
+  max-width: 440px;
+  margin: 22px 0 30px;
+  color: #c0cee1;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.faculty-login-benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  max-width: 370px;
+  padding: 17px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #93c5fd;
+}
+
+.faculty-login-benefit div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.faculty-login-benefit strong {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.faculty-login-benefit span {
+  color: #b8c8dc;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.faculty-login-brand-footer {
+  color: #90a4bf;
+  font-size: 10px;
+}
+
+/* Form layout */
+
+.faculty-login-form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+.faculty-login-form-container {
+  width: 100%;
+  max-width: 420px;
+}
+
+.faculty-login-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 45px;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.faculty-login-back:hover {
+  color: #2563eb;
+}
+
+.faculty-login-form-heading {
+  margin-bottom: 30px;
+}
+
+.faculty-login-form-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 23px;
+  border: 1px solid #dbeafe;
+  border-radius: 15px;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.faculty-login-form-heading h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 31px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.faculty-login-form-heading p {
+  margin: 10px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* Form fields */
+
+.faculty-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.faculty-login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.faculty-login-field label {
+  color: #334155;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.faculty-login-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-height: 49px;
+  padding: 0 13px;
+  border: 1px solid #dbe3ef;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #94a3b8;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faculty-login-input-wrapper:focus-within {
+  border-color: #8db0ff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.faculty-login-input-wrapper input {
+  width: 100%;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #0f172a;
+  font: inherit;
+  font-size: 12px;
+}
+
+.faculty-login-input-wrapper input::placeholder {
+  color: #a0aec0;
+}
+
+.faculty-password-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 5px;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.faculty-remember-option {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #64748b;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.faculty-remember-option input {
+  width: 15px;
+  height: 15px;
+  accent-color: #2563eb;
+}
+
+.faculty-login-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 49px;
+  padding: 0 17px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 9px 22px rgba(37, 99, 235, 0.18);
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.faculty-login-submit:hover:not(:disabled) {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.faculty-login-submit:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+/* Messages */
+
+.faculty-login-error {
+  padding: 12px 14px;
+  border: 1px solid #fecaca;
+  border-radius: 9px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.faculty-login-account-note {
+  margin: 23px 0 0;
+  color: #94a3b8;
+  font-size: 10px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.faculty-login-student-link {
+  margin-top: 25px;
+  color: #64748b;
+  font-size: 11px;
+  text-align: center;
+}
+
+.faculty-login-student-link a {
+  color: #2563eb;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.faculty-login-student-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+  .faculty-login-page {
+    grid-template-columns: 1fr;
+  }
+
+  .faculty-login-brand {
+    gap: 35px;
+    min-height: 280px;
+    padding: 27px 7%;
+  }
+
+  .faculty-login-brand-content {
+    margin: 12px 0;
+  }
+
+  .faculty-login-brand-content h1 {
+    font-size: 32px;
+  }
+
+  .faculty-login-brand-content > p {
+    margin: 14px 0 20px;
+  }
+
+  .faculty-login-benefit {
+    display: none;
+  }
+
+  .faculty-login-brand-footer {
+    display: none;
+  }
+
+  .faculty-login-form-section {
+    padding: 32px 22px 45px;
+  }
+
+  .faculty-login-back {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faculty-login-form-heading h2 {
+    font-size: 27px;
+  }
+
+  .faculty-login-brand-content h1 {
+    font-size: 29px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faculty-login-submit,
+  .faculty-login-input-wrapper {
+    transition: none;
+  }
+}
